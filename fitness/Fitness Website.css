@@ -1,0 +1,190 @@
+/* Body and background image setup */
+body {
+    background-image: url('https://i.pinimg.com/1200x/14/01/25/1401256df4d81b17b6d34fb107fb2adb.jpg');
+    background-size: cover;
+    background-position: center;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    direction: ltr; /* Default direction */
+    margin: 0; /* Remove default body margin */
+    padding: 0; /* Remove default body padding */
+}
+
+/* Language selector position and styling */
+.language-selector {
+    position: absolute; /* Position it relative to the body */
+    top: 20px; /* Distance from the top */
+    left: 20px; /* Distance from the left */
+    z-index: 100; /* Ensure it's above other elements */
+}
+
+.language-selector select {
+    background-color: rgba(255, 255, 255, 0); /* Slightly transparent background */
+    border: 1px solid rgba(255, 255, 255, 0); /* Subtle dark border */
+    border-radius: 5px;
+    padding: 8px 12px;
+    font-size: 14px;
+    color: black; /* Black text for the dropdown */
+    cursor: pointer;
+    -webkit-appearance: none; /* Remove default dropdown arrow for custom styling */
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url('data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22292.4%22%20height%3D%22292.4%22%3E%3Cpath%20fill%3D%22%23000000%22%20d%3D%22M287%2C197.398L146.2%2C56.602L5.4%2C197.398h281.6z%22%2F%3E%3C%2Fsvg%3E'); /* Custom black arrow */
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    background-size: 10px;
+    padding-right: 30px; /* Make space for the custom arrow */
+}
+
+/* Glass card styling */
+.glass-card {
+    background-color: rgba(255, 255, 255, 0.7); /* More opaque for black text visibility */
+    backdrop-filter: blur(15px); /* Stronger blur */
+    -webkit-backdrop-filter: blur(15px); /* For Safari compatibility */
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.4); /* Clearer border */
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2); /* Stronger shadow */
+    padding: 30px;
+    width: 350px;
+    color: black; /* Default text color for the card */
+    text-align: left;
+    flex: 1;
+}
+
+/* Input fields */
+.glass-card input {
+    background: rgba(0, 0, 0, 0.05); /* Slightly darker input background */
+    border: 1px solid rgba(0, 0, 0, 0.1); /* Darker input border */
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    color: black; /* Black text inside inputs */
+    margin-bottom: 15px;
+}
+
+.glass-card input::placeholder {
+    color: #666; /* Dark grey placeholder */
+
+}
+
+/* Labels */
+.input-label { /* Use the class from HTML */
+    color: black;
+    display: block; /* Make label appear above input */
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Log In Button */
+.log-in-button {
+    background-color: #5A1F7B; /* Dark purple button */
+    color: white; /* White text on button */
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.log-in-button:hover {
+    background-color: #7B3E9E; /* Lighter purple on hover */
+}
+
+.create-account-button{
+    background-color: #5A1F7B; /* Dark purple button */
+    color: white; /* White text on button */
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+/* Links (Login, Facebook, Google) */
+.card-link { /* Use the class from HTML */
+    color: #5A1F7B; /* Dark purple for links */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card-link:hover {
+    text-decoration: underline;
+}
+
+/* RTL-specific styles */
+body.rtl-active {
+    direction: rtl;
+    text-align: right; /* Adjusts text alignment for Arabic */
+}
+
+/* Adjust language selector position for RTL */
+body.rtl-active .language-selector {
+    left: auto; /* Reset left position */
+    right: 20px; /* Position on the right for RTL */
+}
+
+/* Adjust card text alignment for RTL */
+body.rtl-active .glass-card {
+    text-align: right;
+}
+
+/* Adjust Google sign-in button for RTL */
+body.rtl-active .g_id_signin {
+    /* Google button often handles its own RTL, but you might need
+       to adjust its container alignment if it's off-center */
+    display: flex;
+    justify-content: flex-end; /* Align Google button to the right */
+}
+
+.guest-sign-in-button {
+    background-color: transparent; /* No background */
+    color: #5A1F7B; /* Match the link color */
+    border: 1px solid #5A1F7B; /* A subtle border */
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.guest-sign-in-button:hover {
+    background-color: #5A1F7B;
+    color: white;
+}
+
+/* Custom styles for the website footer */
+body {
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f3f4f6;
+    overflow-x: hidden;
+}
+
+nav a {
+    text-decoration: none;
+    color: #555;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* This centers the items vertically within the section */
+}
+
+
+
+
+
+

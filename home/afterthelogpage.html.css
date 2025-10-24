@@ -1,0 +1,39 @@
+.logo {
+    max-height: 200px; 
+    width: auto; 
+    justify-content: space-between; 
+    align-items: center;
+    display: flex;
+}
+
+.moving{
+    height: 50px;
+    width: auto;
+    vertical-align: middle; 
+    margin-right: 5px;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    white-space: 90px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #474646;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 30px;
+    margin-right: 20px;
+    animation: alternate-reverse;
+}
+
+/*for the copy right*/
+.text{
+    text-align: center;
+    font-size: 17px;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+}

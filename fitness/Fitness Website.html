@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MALFIT</title>
+        <link rel="stylesheet" href="Fitness Website.css">
+        <script src="https://accounts.google.com/gsi/client" async defer></script>
+        
+        <!--need to work on it
+        <script src="https://appleid.cdn-apple.com/widget/js/appleid.auth.js" async></script>
+        -->
+
+
+
+        <!-- for favicon -->
+        <link rel="icon" type="image/png" href="C:\Users\mada saleh\Desktop\Fitness Website\favicon\favicon.ico" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="C:\Users\mada saleh\Desktop\Fitness Website\favicon\favicon.ico" />
+        <link rel="shortcut icon" href="C:\Users\mada saleh\Desktop\Fitness Website\favicon\favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="C:\Users\mada saleh\Desktop\Fitness Website\favicon\favicon.ico"/>
+        <link rel="manifest" href="C:\Users\mada saleh\Desktop\Fitness Website\favicon\favicon.ico" />
+    </head>
+
+    <body class="bg-gray-100 min-h-screen flex flex-col">
+        <!-- arabic/ english language change  -->
+        <div class="language-selector">
+            <select id="language-switcher">
+                <option value="en">English</option>
+                <option value="ar">العربية</option>
+            </select>
+        </div>
+
+        <br>
+        <div class="glass-container">
+            <div class="glass-card">
+                <form action="action.php" method="post" novalidate>
+                        
+            <!-- sing in if they orady have an account -->
+                    <div class="input-group">
+                        <label for="email" class="input-label">Email</label>
+                        <input type="email" id="email" placeholder="Email">
+                    </div>
+                    <div class="input-group">
+                        <label for="password" class="input-label">Password</label>
+                        <input type="password" id="password" placeholder="Password">
+                    </div>
+
+                    <a href="afterthelogpage.html.html">
+                        <button type="submit" name="login_submit" class="log-in-button">Log In</button>
+                    </a>
+                    </form>
+                    <p>New member?  <a href="Fitness Website11.html">Create an account</a> </p>
+                    <p>عضو جديد؟  <a  href="Fitness Website11.html">أنشاء حساب</a> </p>
+
+            <!-- this is for sing in with google -->
+                    <div id="g_id_onload"
+                        data-client_id="YOUR_GOOGLE_CLIENT_ID"
+                        data-callback="handleCredentialResponse">
+                    </div>
+                    <div class="g_id_signin" 
+                        data-type="icon"                
+                        data-size="large"             
+                        data-theme="outline"           
+                        data-shape="circle"            
+                        data-text="signin_with"        
+                        data-locale="en">             
+                    </div>
+
+                    <a href="afterthelogpage.html.html">
+                        <button typle="submit" nane="guest-submit" class="guest-sign-in-button">Guest</button>
+                    </a>
+                    
+            </div>
+        </div>
+        <!--Not for me: JavaScript before the closing body to let it work otherwise it won't work-->
+        <script src="Fitness Website.JS"></script> 
+    </body>
+</html>

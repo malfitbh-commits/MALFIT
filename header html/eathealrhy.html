@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en" class="body">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>MALFIT</title>
+        <link rel="stylesheet" href="Fitness Website.css">
+
+        <!-- for favicon -->
+        <link rel="icon" type="image/png" href="C:\Users\mada saleh\Desktop\Fitness Website\favicon\favicon.ico" sizes="96x96" />
+        <link rel="icon" type="image/svg+xml" href="C:\Users\mada saleh\Desktop\Fitness Website\favicon\favicon.ico" />
+        <link rel="shortcut icon" href="C:\Users\mada saleh\Desktop\Fitness Website\favicon\favicon.ico" />
+        <link rel="apple-touch-icon" sizes="180x180" href="C:\Users\mada saleh\Desktop\Fitness Website\favicon\favicon.ico"/>
+        <link rel="manifest" href="C:\Users\mada saleh\Desktop\Fitness Website\favicon\favicon.ico" />
+
+        <style>
+            header {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 20px 80px;
+                white-space: 90px;
+            }
+
+            nav a {
+                text-decoration: none;
+                color: #474646;
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                padding: 30px;
+                margin-right: 20px;
+                animation: alternate-reverse;
+            }
+
+            /*for the copy right*/
+            .text{
+                text-align: center;
+                font-size: 17px;
+                font-family: 'Arial Narrow', Arial, sans-serif;
+            }
+
+            /* Define the fixed position and size for the video */
+            #background-video {
+                width: 100vw;
+                height: 100vh;
+                object-fit: cover;
+                position: fixed;
+                top: 0;
+                left: 0;
+                z-index: -1;
+            }
+            /* Ensure content sections scroll naturally over the fixed video */
+            .content-section {
+                position: relative;
+                z-index: 20;
+                padding: 4rem 1rem;
+            }
+            .logo {
+                max-height: 200px; 
+                width: auto; 
+                justify-content: space-between; 
+                align-items: center;
+                display: flex;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <video autoplay muted loop playsinline id="background-video" poster="https://placehold.co/1920x1080/10B981/ffffff?text=Loading+Video">
+            <source src="C:\Users\mada saleh\Desktop\Fitness Website\work img\4K HDR Fruits, Strong Colours and Closeups - Calm and Relaxing Piano Music - Find Your Balance (1080p, h264).mp4" type="video/mp4" onerror="this.onerror=null; this.parentNode.parentNode.style.background='linear-gradient(135deg, #10B981, #059669)'; this.parentNode.parentNode.classList.remove('video-container');">
+        </video>
+         <!--logo-->
+        <header>
+            <a href="/" class="logo">
+                <img 
+                    src="C:\Users\mada saleh\Desktop\Fitness Website\img\MALFIT-removebg-preview.png"
+                    alt="MALFIT-logo" 
+                    class="logo"
+                >
+            </a>
+        </header>
+        
+         <!-- arabic/ english language change  -->
+        <div class="language-selector">
+            <select id="language-switcher">
+                <option value="en">English</option>
+                <option value="ar">العربية</option>
+            </select>
+        </div>
+        
+        <div>
+            <header class="category">
+            <nav>
+                <a href="afterthelogpage.html.html">Home</a>
+                <a href="eathealrhy.html">Eat healthy</a>
+                <a href="calories.html">Calories</a>
+                <a href="club.html">Clubs</a>
+                <a href="survey.html">Survey</a>
+                <a href="aboutUs.html">About Us</a>
+                <a href="accountData.html">My Account</a>
+            </nav>
+            </header>
+        </div>
+
+        <footer class="copyright">
+            <div class="text-sm">
+                &copy; 2025, Senior Project, Mada Saleh, Ahmed Khalifa, Lora Adel, Supervisor Dr.Abdulla Mohamed Khalid Alqaddoumi
+            </div>
+        </footer>
+        <script src="afterthelogpage.html.js"></script> 
+    </body>
+</html>

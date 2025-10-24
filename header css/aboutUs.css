@@ -1,0 +1,50 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 80px;
+    white-space: 90px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #474646;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 30px;
+    margin-right: 20px;
+    animation: alternate-reverse;
+}
+
+/*to make the paragraph and img beside each other*/
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* This centers the items vertically within the section */
+    background-color: linear-gradient(#ff6dc995, #986cffa0);
+}
+
+/*for the paragraph "About Us"*/
+.leading {
+    flex: 1;
+    padding-right: 50px;
+    font-size: 25px;
+    font-family: 'Times New Roman', Times, serif;
+    color: #000000;
+    animation: fadeIn 2s ease-out;
+}
+
+/*for the img in About Us*/
+.us {
+    flex: 1;
+    text-align: right;
+    animation: fadeIn 2s ease-out;
+}
+
+/*for the copy right*/
+.text{
+    text-align: center;
+    font-size: 17px;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+}
+
+
